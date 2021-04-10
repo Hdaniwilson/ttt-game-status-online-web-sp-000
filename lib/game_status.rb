@@ -21,3 +21,7 @@ def won?(board)
     position_taken?(board, combo[0])
   end
 end
+
+def full?(board)
+  board.all?{|i| i == "X" || i =="O"}
+end
